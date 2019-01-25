@@ -25,6 +25,12 @@ describe('ParseTitle', () => {
     ])
   })
 
+  test('Parsing a place', () => {
+    const { place } = parseWorkshopTitle
+
+    expect(place).toBe('tokyo')
+  })
+
   test('Parsing an Issue Date', () => {
     const { rawDate, date } = parseWorkshopTitle
 
